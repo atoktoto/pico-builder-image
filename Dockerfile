@@ -1,6 +1,6 @@
 FROM phusion/baseimage:jammy-1.0.0
 RUN apt-get update && \
-    apt-get install -y python3-pip git cmake gcc-arm-none-eabi gcc g++ pkg-config gdb-multiarch automake autoconf build-essential texinfo libtool libftdi-dev libusb-1.0-0-dev libstdc++-arm-none-eabi-newlib libnewlib-arm-none-eabi && \
+    apt-get install -y python3-pip git cmake gcc-arm-none-eabi gcc g++ pkg-config gdb-multiarch automake autoconf build-essential texinfo libtool libftdi-dev libusb-1.0-0-dev libstdc++-arm-none-eabi-newlib libnewlib-arm-none-eabi minicom && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # OpenOCD
