@@ -18,6 +18,10 @@ For convinience, it also includes:
 - [Pico Examples](https://github.com/raspberrypi/pico-examples)
 - [Pico Playground](https://github.com/raspberrypi/pico-playground)
 
+All of those are available in `/pico` directory. 
+
+`PICO_SDK_PATH`, `PICO_EXAMPLES_PATH`, `PICO_EXTRAS_PATH`, `PICO_PLAYGROUND_PATH`, `FREERTOS_KERNEL_PATH` are set.
+
 ## Debugging
 
 To debug your RP2040, the docker container needs to have access to the USB device. 
