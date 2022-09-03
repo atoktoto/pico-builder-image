@@ -1,6 +1,7 @@
 # Pico Builder Image
 
-Github: (https://github.com/atoktoto/pico-builder-image/)
+Github: https://github.com/atoktoto/pico-builder-image/
+
 This docker image contains all dependencies required to build and debug code using Raspberry Pico SDK. 
 
 This includes:
