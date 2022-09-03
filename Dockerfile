@@ -32,6 +32,11 @@ RUN git clone https://github.com/raspberrypi/pico-playground.git && cd pico-play
 RUN echo "export PICO_PLAYGROUND_PATH=/pico/pico-playground" >> ~/.bashrc
 ENV PICO_PLAYGROUND_PATH /pico/pico-playground
 
+# freeRTOS
+RUN git clone https://github.com/FreeRTOS/FreeRTOS-Kernel.git
+RUN echo "export FREERTOS_KERNEL_PATH=/pico/FreeRTOS-Kernel" >> ~/.bashrc
+ENV FREERTOS_KERNEL_PATH /pico/FreeRTOS-Kernel
+
 # picoprobe
 WORKDIR /pico
 RUN git clone https://github.com/raspberrypi/picoprobe.git
