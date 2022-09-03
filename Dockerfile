@@ -1,4 +1,5 @@
-FROM phusion/baseimage:jammy-1.0.0
+FROM ubuntu:22.04
+
 RUN apt-get update && \
     apt-get install -y python3-pip git cmake gcc-arm-none-eabi gcc g++ pkg-config gdb-multiarch automake autoconf build-essential texinfo libtool libftdi-dev libusb-1.0-0-dev libstdc++-arm-none-eabi-newlib libnewlib-arm-none-eabi minicom && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
@@ -53,6 +54,3 @@ RUN make -j4 && make install
 
 # Example VSCode launch.json
 COPY vscode-config/launch.json /pico/pico-examples/.vscode/launch.json
-
-# baseimage init
-CMD ["/sbin/my_init"]
